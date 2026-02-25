@@ -9,6 +9,6 @@ def generate_grid(size):
 
     return grid
 
-print(generate_grid(10))
-
-
+world = generate_grid(10)
+for i in world:
+    print(i)
