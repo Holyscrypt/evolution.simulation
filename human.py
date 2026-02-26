@@ -14,7 +14,9 @@ class Human:
         y = self.position[1]
         movements = {"Up": (x, y + 1), "Down": (x, y - 1),
                      "Left": (x - 1, y), "Right": (x + 1, y)}
-
-
-
+        new_position = random.choice(movements.values())
+        if new_position in self.grid:
+            self.position = new_position
+        else:
+            pass
 
