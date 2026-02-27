@@ -13,7 +13,7 @@ class Human:
     def __init__(self, grid):
         self.grid = grid
         self.position = random_cell(grid)
-        self.energy = None
+        self.energy = 100
 
     def move(self):
         """
